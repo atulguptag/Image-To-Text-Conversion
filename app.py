@@ -28,5 +28,5 @@ def image_to_text(image):
     text = pytesseract.image_to_string(image)
     return text.strip()
 
-if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0')
+if __name__ == "__main__":
+   app.run(host='0.0.0.0', port=5000)
